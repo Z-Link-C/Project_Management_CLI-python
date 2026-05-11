@@ -1,7 +1,7 @@
 # commands:
 ## Python main.py user [add, list, delete]
   ### Add:
-    Python main.py user add --name <name> --email <email>
+    Python main.py user add --name <Name> --email <Email>
   ### Delete:
     Python main.py user delete --id <UserID> 
   ### List:
