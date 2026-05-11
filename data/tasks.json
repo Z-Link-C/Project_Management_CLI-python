@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "e549f86d-7d04-4293-9b06-9ec70cb60967",
+    "title": "idk",
+    "status": "todo",
+    "project_id": "7c5027ae-e0c8-4fd3-b9af-811544f6ba23",
+    "assigned_to_id": "6b18ab9d-46a3-4edb-bc7d-6076d9c06590"
+  }
+]

@@ -10,7 +10,7 @@ class Tasks:
                 f"Invalid status {status!r}."
                 f"Please Choose only from: {', '.join(VSTATS)}"
             )
-        self.id or str(uuid.uuid4())
+        self.id=id or str(uuid.uuid4())
         self.title=title
         self.status=status
         self.project=project

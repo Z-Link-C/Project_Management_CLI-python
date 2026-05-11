@@ -24,15 +24,17 @@ def load():
     from models.user import Users
     from models.project import Projects
     from models.task import Tasks
+    
     Users.all.clear()
     Projects.all.clear()
     Tasks.all.clear()
+
     for r in read("users"):
         Users.from_dict(r)
     for r in read("projects"):
         owner=Users.find(r["owner_id"])
         if owner:
-            Projects.from_dict(r,owner=owner)
+            Projects.from_dict(r,own=owner)
     for r in read("tasks"):
         proj=Projects.find(r["owner_id"])
         assigned=(Users.find(r["assigned_to_id"]) if r.get("assigned_to_id") else None)
