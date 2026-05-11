@@ -49,7 +49,7 @@ def add_project(args):
         owner=owner,
     )
     save()
-    print(f"Created {project} project.")
+    print(f"Created {project}")
 
 
 def list_projects(args):
@@ -133,7 +133,7 @@ def delete_task(args):
 
 #---entry
 def build_parser():
-    parser = argparse.ArgumentParser(prog="pm", description="Lightweight project-management CLI")
+    parser = argparse.ArgumentParser(prog="pm", description="project-management CLI")
     sub = parser.add_subparsers(dest="entity", metavar="entity", required=True)
 
     # -- Users

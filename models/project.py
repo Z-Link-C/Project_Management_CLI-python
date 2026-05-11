@@ -8,6 +8,8 @@ class Projects:
         self.description=description
         self.due_date=due_date
         self.owner=owner
+        Projects.all.append(self)
+
          
     def tasks(self):
         return [t for t in Tasks.all if t.project is self]
