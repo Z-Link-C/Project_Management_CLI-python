@@ -1,8 +1,8 @@
 # lib/cli_tool.py
 import argparse
 import sys
-from models import Users, Projects,Tasks
-from utils import load, save, print_table
+from lib.models import Users, Projects,Tasks
+from lib.utils import load, save, print_table
 
 #---Users
 def add_user(args):
