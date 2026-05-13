@@ -36,7 +36,7 @@ def load():
         if owner:
             Projects.from_dict(r,own=owner)
     for r in read("tasks"):
-        proj=Projects.find(r["owner_id"])
+        proj=Projects.find(r["project_id"])
         assigned=(Users.find(r["assigned_to_id"]) if r.get("assigned_to_id") else None)
         if proj:
             Tasks.from_dict(r,project=proj,assigned_to=assigned)
